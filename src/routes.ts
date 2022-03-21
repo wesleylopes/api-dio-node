@@ -9,7 +9,7 @@ router.get('/',(request:Request, response:Response)=>{
   
   const createUserController =new CreateUserController();
 
-  router.get('/usuarios', createUserController.handle);
+   router.post('/usuarios', createUserController.handle);
 
 
   export { router }
